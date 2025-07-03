@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA's Portfolio Website</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d24bdcef6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- Ultra Premium Intro -->
+    <div class="intro-container" id="introContainer">
+        <div id="particles-js"></div>
+        
+        <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+        
+        <div class="intro-content">
+            <!-- Profile Photo -->
+            <img src="images/aa1.jpeg" alt="Profile Photo" class="profile-photo" id="profilePhoto">
+            
+            <h1 class="main-title" id="mainTitle">WELCOME</h1>
+            <h2 class="sub-title" id="subTitle">TO MY PORTFOLIO</h2>
+            <div class="loader-container" id="loaderContainer">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="brand-tagline" id="brandTagline">
+                SELECT YOUR LANGUAGE
+            </div>
+        </div>
+        
+        <button class="skip-btn" id="skipBtn">SKIP INTRO</button>
+    </div>
+    
+    <!-- Language Selection Modal -->
+    <div class="language-modal" id="languageModal">
+        <div class="language-box">
+            <h2 class="language-title">Choose Your Language</h2>
+            <div class="language-options">
+                <button class="language-btn" data-lang="hi">हिंदी (Hindi)</button>
+                <button class="language-btn" data-lang="ne">नेपाली (Nepali)</button>
+                <button class="language-btn" data-lang="en">English</button>
+                <button class="language-btn" data-lang="es">Español (Spanish)</button>
+                <button class="language-btn" data-lang="ru">Русский (Russian)</button>
+                <button class="language-btn" data-lang="fr">Français (French)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-text-wrapper">
+  <div class="scroll-text">
+    <div class="scroll-content">
+      Language selection is unavailable, and my network isn't updated yet—but exciting features are coming soon, so stay connected and check my website for updates!
+    </div>
+    <div class="scroll-content">
+      Language selection is unavailable, and my network isn't updated yet—but exciting features are coming soon, so stay connected and check my website for updates!
+    </div>
+  </div>
+</div>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo1.png" width="200" height="160" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+
+            </nav>
+            
+        
+
+        <!-- <div class="containerlr"> -->
+        <!-- <div class="left-section"> -->
+            <div class="header-text">
+                <!-- <p>FullStack Developer</p> -->
+                <!-- <h1>Hi, This is <span>Arun Adhikai</span> From Bhopal</h1> -->
+                
+                <div class="containera">
+                    <h2>I am a <span class="typing-box blue-text"><span class="typing-text blue-text"></span></span><span class="cursor blue-text"></span></h2>
+                    <h2>Hi, I'm <span class="blue-text">Arun Adhikari</span><br><h4> From <span>Bhopal</span>(The City of Lakes).</h4></h2>
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="right-section"> -->
+            <!-- <img src="aa1.jpeg" alt=""> -->
+        </div>
+    </div>
+           
+            
+    
+    </div>  
+
+    <!-- -----------------------About------------------------ -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mee.jpg" >
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-titile">About Me</h1>
+                    <p>I am a passionate freelance day trader, software developer, and content creator. By day, I analyze markets and execute strategic trades; by night, I code and write about tech, finance, and trading. I also share my insights as a YouTuber, breaking down complex topics into actionable ideas. Multidisciplinary and always learning, I thrive at the intersection of numbers, words, and innovation.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>   
+                    <div class="tab-contents active-tab" id="skills">
+                         <ul>
+        <li><span>Day Trading</span><br>Technical analysis, learning risk management, and learning intraday strategies.</li>
+        <li><span>Software Development</span><br>Building web/app solutions with clean code.</li>
+        <li><span>Content Writing</span><br>Creating engaging articles on tech and different content, youtube channels script.</li>
+        <li><span>YouTube Content</span><br>Producing educational content exploring diverse topics and general knowledge.</li>
+    </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+    <ul>
+        <li><span>OutSystems Developer</span><br>8 months of professional experience developing mobile and web applications using the OutSystems low-code platform</li>
+        <li><span>Freelance Developer & Data Specialist</span><br>2 or more years of part-time experience in web application development and data entry operations for various clients through Affbull Affiliates.</li>
+        <!-- <li><span>Data Entry Operator</span><br>contractual experience handling data management systems at Affbull</li> -->
+        <li><span>House Manager & Executive Assistant</span><br>1.2 years of experience managing guest house operations and providing administrative support to IAS officer S.J. Sir</li>
+    </ul>
+</div>
+                   <div class="tab-contents" id="education">
+    <ul>
+        <li><span>10th Standard</span><br>Completed from Nalanda Public H.S. School, Year: [2016]</li>
+        <li><span>12th Standard</span><br>Completed from Nalanda Public H.S. School, Year: [2018]</li>
+        <li><span>Bachelor of Computer Applications (BCA)</span><br>V College, Year: [2021], CGPA: 7.02</li>
+        <li><span>Master of Computer Applications (MCA)</span><br>LNCT College, Year: [2023], CGPA: 8.14</li>
+    </ul>
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------Services--------------------- -->
+     
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titile">My Services</h1>
+            <div class="services-list">
+                <div class="service-card">
+    <i class="fa-solid fa-gear-code"></i>
+    <h2>Web Application Development</h2>
+    <p>I build custom web applications that solve real business problems. Combining traditional coding with OutSystems expertise, I deliver fast, scalable solutions with intuitive interfaces. From automating workflows to modernizing legacy systems, I create tools users love and businesses rely on.</p>
+    <a href="#contact">Let's Build Yours →</a>
+</div>
+               <div class="service-card">
+    <i class="fa-solid fa-python"></i> <!-- Python icon -->
+    <h2>Django Web Development</h2>
+    <p>I build secure, scalable web applications using Python and Django framework. From CMS platforms to complex database-driven systems, I create robust backend architectures with clean, maintainable code. Perfect for startups and enterprises needing reliable, high-performance web solutions.</p>
+    <a href="#contact">Discuss Your Project →</a>
+</div>
+                <div class="service-card">
+    <i class="fa-solid fa-database"></i>
+    <h2>Data Entry & Management</h2>
+    <p>I deliver accurate, efficient data processing services with meticulous attention to detail. Specializing in high-volume data entry, spreadsheet management, and database maintenance. Whether you need CRM updates, Excel automation, or data cleansing, I ensure your information is organized and error-free.</p>
+    <a href="#contact">Optimize Your Data →</a>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------Portfolio-------------------- -->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titile">My Work</h1>  
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Logo1.jfif" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>For a business/service description:
+                        "Providing expert assistance in application development to help clients achieve their goals."
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>  
+                <div class="work">
+                    <img src="images/Logo2.avif" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>For a freelance/consultant profile:
+                            "I help individuals and businesses create functional, user-friendly applications."
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                   
+                </div>  
+                <div class="work">
+                    <img src="images/Logo3.avif" alt="">
+                    <div class="layer">
+                        <h3>All types Applications</h3>
+                        <p>Simpler & direct:
+                            "Professional application development services to bring your ideas to life."
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>              
+            </div> 
+            <a href="#" class="btn">See More</a>         
+        </div>
+    </div>
+
+    <!-- ------------------------Contact--------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titile">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>erarunad7@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- <a href="ArunResume.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <input type="text" name="Mobile Number" placeholder="Enter your Mobile number">
+                        <textarea name="Message" rows="4" placeholder="Enter your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 💙 
+                <!-- <B>•Community guidelines</B> 
+                <b>•Terms of service</b>💙 <p></p> -->
+                <!-- <B>•Community guidelines<i class="fa-brands fa-html5"></i></B><em> </em> 
+                <b>•Terms of service<i class="fa-brands fa-css3-alt"></i></b><em> </em>
+                <b><i class="fa-brands fa-js"></i></b><em> </em>💙</p> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <Script>       
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            } 
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </Script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydJcjJhpOhj_y8YUX_YDRf6C7W2IIfWGCEz7CWzMlHRRXe9XyJbbVqsDQR4t2xDmZJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const intro = document.getElementById('introContainer');
+            const profilePhoto = document.getElementById('profilePhoto');
+            const mainTitle = document.getElementById('mainTitle');
+            const subTitle = document.getElementById('subTitle');
+            const loaderContainer = document.getElementById('loaderContainer');
+            const loaderBar = document.getElementById('loaderBar');
+            const brandTagline = document.getElementById('brandTagline');
+            const skipBtn = document.getElementById('skipBtn');
+            const languageModal = document.getElementById('languageModal');
+            const languageBtns = document.querySelectorAll('.language-btn');
+            
+            // Initialize particle.js
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#4facfe"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#4facfe",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out"
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        }
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 0.25
+                            }
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+            // GSAP Animations
+            const tl = gsap.timeline();
+            
+            // Sequence animations
+            tl.to(profilePhoto, {
+                duration: 1,
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                ease: "back.out(1.7)",
+                delay: 0.3
+            })
+            .to(mainTitle, {
+                duration: 1.5,
+                opacity: 1,
+                y: 0,
+                rotationX: 0,
+                ease: "power3.out",
+            }, "-=0.8")
+            .to(subTitle, {
+                duration: 1.2,
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+            }, "-=1")
+            .to(loaderContainer, {
+                duration: 1,
+                opacity: 1,
+                ease: "power2.out",
+            })
+            .to(brandTagline, {
+                duration: 1.2,
+                opacity: 1,
+                ease: "power3.out",
+            }, "-=0.8")
+            .to(skipBtn, {
+                duration: 1,
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+            }, "-=0.8");
+
+            // Animate loader bar
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += 1;
+                loaderBar.style.width = `${progress}%`;
+                
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    // Show language modal after intro completes
+                    setTimeout(() => {
+                        languageModal.classList.add('active');
+                    }, 500);
+                }
+            }, 30);
+
+            // Skip intro when button is clicked
+            skipBtn.addEventListener('click', () => {
+                clearInterval(progressInterval);
+                loaderBar.style.width = '100%';
+                setTimeout(() => {
+                    languageModal.classList.add('active');
+                }, 300);
+            });
+
+            // Handle language selection
+            languageBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Close the language modal
+                    languageModal.classList.remove('active');
+                    
+                    // Hide intro with animation
+                    intro.style.opacity = 0;
+                    setTimeout(() => {
+                        intro.style.display = 'none';
+                    }, 500);
+                });
+            });
+        });
+    </script>
+    <script>
+        const words = ["Freelancer", "Software Developer", "Content Writer", "YouTuber", "Freelance Day Trader"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingText = document.querySelector(".typing-text");
+
+        function typeEffect() {
+          const currentWord = words[wordIndex];
+          const displayedText = currentWord.substring(0, charIndex);
+          typingText.textContent = displayedText;
+
+          if (!isDeleting && charIndex < currentWord.length) {
+            charIndex++;
+            setTimeout(typeEffect, 100);
+          } else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(typeEffect, 50);
+          } else {
+            if (!isDeleting) {
+              isDeleting = true;
+              setTimeout(typeEffect, 1000); // pause before deleting
+            } else {
+              isDeleting = false;
+              wordIndex = (wordIndex + 1) % words.length;
+              setTimeout(typeEffect, 300); // pause before typing next
+            }
+          }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          typeEffect();
+        });
+    </script>
+
+    <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<!-- <script>
+  document.onkeydown = function(e) {
+    // Disable F12
+    if (e.key === "F12") {
+      return false;
+    }
+
+    // Disable Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      return false;
+    }
+
+    // Disable Ctrl+U (View Source)
+    if (e.ctrlKey && e.key === "u") {
+      return false;
+    }
+
+    // Disable Ctrl+Shift+J (Console)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      return false;
+    }
+
+    // Disable Ctrl+Shift+C (Inspect)
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+      return false;
+    }
+  };
+</script>
+<style>
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+</style>
+ -->
+
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+</body>
+</html>
